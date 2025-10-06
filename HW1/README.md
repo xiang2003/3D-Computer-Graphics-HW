@@ -8,7 +8,7 @@
 
 ## 作業說明
 ### Line
-![line](/image/line.gif)
+![line](/HW1/image/line.gif)
 
 使用Midpoint進行繪製
 根據上課所抄寫的code進行更改
@@ -50,7 +50,7 @@
 ```
 
 ### Circle
-![circle](/image/circle.gif)
+![circle](/HW1/image/circle.gif)
 
 同樣使用midpoint進行繪製
 利用園的對稱性將園分成八等分同時繪製
@@ -79,7 +79,7 @@
   }    
 ```
 ### Ellipse
-![eliipse](/image/ellipse.gif)
+![eliipse](/HW1/image/ellipse.gif)
 
 作法跟circle很像，切成8個區域去繪製
 不同的是橢圓一次只能同時畫四個區域
@@ -136,7 +136,7 @@
   }
 ```
 ### Curve
-![curve](/image/curve.gif)
+![curve](/HW1/image/curve.gif)
 
 利用插值法計算出每一點的位置
 
@@ -151,7 +151,7 @@
 ```
 
 ### Erase
-![erase](/image/erase.gif)
+![erase](/HW1/image/erase.gif)
 
 將p1、p2圍成的正方形區域，全部用背景色覆蓋
 
@@ -170,4 +170,5 @@
 
 ## 關於LLM
 原先用上課筆記抄寫的code，發現line有些方向的線畫不出來
+
 因此有使用LLM去協助我分析並修改code
