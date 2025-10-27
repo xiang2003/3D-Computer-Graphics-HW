@@ -118,7 +118,7 @@
 ```
 
 ### Sutherland Hodgman Algorithm
-![Sutherland](/HW2/image/Sutherland.png)
+![Sutherland](/HW2/image/sutherland.png)
 
 依照左下右上的順序，去對polygon進行裁切
 ```java
