@@ -44,7 +44,8 @@ Matrix4.Trans(transform.position).mult(Matrix4.RotY(transform.rotation.y))
 ![depth1](/HW3/image/depth1.png)
 ![depth2](/HW3/image/depth2.png)
 
-發現用bilinear interpolation看起來沒有愈
+發現用bilinear interpolation看起來沒有用
+
 改用Barycentric interpolation找z
 ```java
     Vector3 v0 = vertex[0];
@@ -104,4 +105,5 @@ Matrix4.Trans(transform.position).mult(Matrix4.RotY(transform.rotation.y))
 ```
 
 ### 關於LLM
+
 LLM用於幫助我理解演算法內容，並協助我將演算法實際改寫成能夠執行的code
