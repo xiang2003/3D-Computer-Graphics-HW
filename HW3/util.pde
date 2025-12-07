@@ -165,11 +165,17 @@ public float getDepth(float x, float y, Vector3[] vertex) {
     Vector3 v1 = vertex[1];
     Vector3 v2 = vertex[2];
         
-    float xa = (y-v0.y)*(v1.x - v0.x)/(v1.y - v0.y)+v0.x;
-    float xb = (y-v2.y)*(v1.x - v2.x)/(v1.y - v2.y)+v2.x;
-    float za = (y-v0.y)*(v1.z - v0.z)/(v1.y - v0.y)+v0.z;
-    float zb = (y-v2.y)*(v1.z - v2.z)/(v1.y - v2.y)+v2.z;
-    float z = (x-xa)*(zb - za)/(xb - xa)+za;
+    float x0=v0.x, y0=v0.y, z0=v0.z;
+    float x1=v1.x, y1=v1.y, z1=v1.z;
+    float x2=v2.x, y2=v2.y, z2=v2.z;
+
+    float det = (y1 - y2)*(x0 - x2) + (x2 - x1)*(y0 - y2);
+
+    float alpha = ((y1 - y2)*(x - x2) + (x2 - x1)*(y - y2)) / det;
+    float beta  = ((y2 - y0)*(x - x2) + (x0 - x2)*(y - y2)) / det;
+    float gamma = 1.0f - alpha - beta;
+
+    float z = alpha*z0 + beta*z1 + gamma*z2;
     return z;
 }
 
